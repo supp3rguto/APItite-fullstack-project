@@ -15,14 +15,11 @@ public class User implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    @Column(unique = true) // O email deve ser único
+    @Column(unique = true)
     private String email;
     private String password;
-    private String address; // O endereço do usuário!
+    private String address;
 
-    // Getters e Setters...
-
-    // Métodos da interface UserDetails (Spring Security)
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of(new SimpleGrantedAuthority("ROLE_USER"));

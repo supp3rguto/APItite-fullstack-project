@@ -12,11 +12,8 @@ const RestaurantRow = ({ title, restaurants }) => {
     const displayedRestaurants = isExpanded ? restaurants : restaurants.slice(0, INITIAL_ITEMS_LIMIT);
     const shouldShowButton = restaurants.length > INITIAL_ITEMS_LIMIT;
 
-    // Função para lidar com erros de imagem
     const handleImageError = (e) => {
-        // Impede um loop infinito caso a imagem de fallback também falhe
         e.target.onerror = null; 
-        // Substitui a imagem quebrada por um placeholder
         e.target.src = `https://placehold.co/60x60/f7f7f7/ccc?text=${e.target.alt.charAt(0)}`;
     };
 
@@ -35,11 +32,8 @@ const RestaurantRow = ({ title, restaurants }) => {
                 {displayedRestaurants.map(restaurant => (
                     <div key={restaurant.id} className="establishment-card">
                         <div className="card-image-container">
-                            {/* MUDANÇA PRINCIPAL AQUI */}
                             <img 
-                                // Constrói a URL da API da Clearbit dinamicamente
                                 src={`https://logo.clearbit.com/${restaurant.companyDomain}`} 
-                                // Define o que fazer em caso de erro (logo não encontrada)
                                 onError={handleImageError}
                                 alt={restaurant.name} 
                             />

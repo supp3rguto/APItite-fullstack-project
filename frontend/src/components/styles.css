@@ -18,14 +18,13 @@ body, html, #root {
     color: var(--text-color);
 }
 
-/* --- ESTRUTURA GERAL (STICKY FOOTER) --- */
 .page-wrapper, .site-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 .site-content, .landing-v3-wrapper {
-    flex-grow: 1; /* Faz o conteúdo principal crescer e empurrar o footer para baixo */
+    flex-grow: 1;
 }
 .app-container {
     max-width: 980px;
@@ -35,7 +34,6 @@ body, html, #root {
     box-sizing: border-box;
 }
 
-/* --- NOVO DESIGN DA LANDING PAGE (V3) --- */
 .landing-v3-wrapper {
     width: 100%;
     background-color: var(--background-color);
@@ -48,7 +46,7 @@ body, html, #root {
     position: relative;
     width: 100%;
     overflow: hidden;
-    margin-bottom: -1px; /* remove o espaço entre a onda e o vermelho */
+    margin-bottom: -1px; 
 }
 .wave-animation-container {
     position: absolute;

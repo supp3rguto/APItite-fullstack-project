@@ -11,13 +11,10 @@ const DashboardPage = () => {
     const [selectedCategory, setSelectedCategory] = useState('Restaurante');
 
     useEffect(() => {
-        // --- MODO DETETIVE ATIVADO ---
         console.log(`Buscando estabelecimentos para a categoria: "${selectedCategory}"`);
-        setError(''); // Limpa erros antigos antes de uma nova busca
-
+        setError(''); 
         axios.get(`${API_URL}?category=${selectedCategory}`)
             .then(response => {
-                // Se a busca deu certo, vamos ver o que o backend retornou
                 console.log("Resposta da API recebida com sucesso:", response.data);
                 
                 if (response.data.length === 0) {
@@ -27,21 +24,18 @@ const DashboardPage = () => {
                 setRestaurants(response.data);
             })
             .catch(error => {
-                // Se a busca falhou, vamos ver o erro detalhado
                 console.error("ERRO ao buscar dados da API:", error);
                 setError(`Falha ao carregar. O backend está rodando e acessível? Erro: ${error.message}`);
             });
     }, [selectedCategory]);
 
     return (
-        // O container principal foi movido para o AuthLayout, então podemos remover daqui
         <>
             <CategoryList 
                 selectedCategory={selectedCategory}
                 setSelectedCategory={setSelectedCategory} 
             />
             
-            {/* Exibe a mensagem de erro na tela se houver algum problema */}
             {error && <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>}
             
             <RestaurantRow title={`Famosos em ${selectedCategory}`} restaurants={restaurants} />

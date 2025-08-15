@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Array de categorias 100% limpo
 const categories = [
     { name: 'Restaurante', img: '/images/categories/restaurant.png' },
     { name: 'Sobremesas',  img: '/images/categories/dessert.png' },
@@ -10,7 +9,6 @@ const categories = [
     { name: 'Bebidas',     img: '/images/categories/beverage.png' }
 ];
 
-// O resto do seu componente continua igual
 const CategoryList = ({ selectedCategory, setSelectedCategory }) => {
   return (
     <div className="category-container">

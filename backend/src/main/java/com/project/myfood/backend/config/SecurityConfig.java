@@ -25,7 +25,6 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
-                // 1. ADICIONADO: Habilita a configuração de CORS que definimos abaixo
                 .cors(Customizer.withDefaults())
                 .headers(headers -> headers
                         .frameOptions(frameOptions -> frameOptions.disable())
@@ -42,21 +41,15 @@ public class SecurityConfig {
         return http.build();
     }
 
-    // 2. NOVO BEAN: Define as regras de CORS para toda a aplicação
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        // Permite requisições da origem do seu frontend React
         configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
-        // Permite os métodos HTTP mais comuns
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
-        // Permite todos os cabeçalhos
         configuration.setAllowedHeaders(Arrays.asList("*"));
-        // Permite o envio de credenciais (como cookies)
         configuration.setAllowCredentials(true);
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-        // Aplica esta configuração para todos os caminhos da sua API
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }

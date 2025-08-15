@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // 1. Adicionamos o 'Link' à importação
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../components/styles.css';
 
@@ -76,7 +76,6 @@ const RegisterPage = () => {
                         {isSubmitting ? 'Cadastrando...' : 'Cadastrar'}
                     </button>
 
-                    {/* 2. LINHA ADICIONADA: Link para voltar à página de login */}
                     <p className="register-link">
                         Já tem uma conta? <Link to="/login">Entre</Link>
                     </p>
