@@ -7,15 +7,15 @@ INSERT INTO restaurant (name, company_domain, rating, category, distance, delive
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Jeronimo', 'jeronimoburger.com.br', 4.7, 'Restaurante', '3.8 km', '40-50 min', 8.50);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Giraffas', 'giraffas.com.br', 4.3, 'Restaurante', '1.5 km', '30-40 min', 5.00);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('O Matuto', 'omatuto.com.br', 4.8, 'Restaurante', '6.0 km', '55-65 min', 14.00);
-INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Italian House', 'italianhouse.com.br', 4.6, 'Restaurante', '2.8 km', '40-50 min', 7.50);
+INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Italian House', 'italinhouse.com.br', 4.6, 'Restaurante', '2.8 km', '40-50 min', 7.50);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('China in Box', 'chinainbox.com.br', 4.5, 'Restaurante', '3.3 km', '35-45 min', 8.90);
-INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('KFC', 'kfc.com.br', 4.6, 'Restaurante', '2.1 km', '30-40 min', 6.99);
+INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('KFC', 'kfcbrasil.com.br', 4.6, 'Restaurante', '2.1 km', '30-40 min', 6.99);
 
 -- Sobremesas
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Bacio di Latte', 'baciodilatte.com.br', 4.9, 'Sobremesas', '1.1 km', '15-25 min', 9.50);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Sodiê Doces', 'sodiedoces.com.br', 4.8, 'Sobremesas', '2.4 km', '25-35 min', 7.00);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Chiquinho Sorvetes', 'chiquinho.com.br', 4.7, 'Sobremesas', '700 m', '10-20 min', 4.00);
-INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Casa Bauducco', 'casabauducco.com.br', 4.6, 'Sobremesas', '3.0 km', '30-40 min', 8.50);
+INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Casa Bauducco', 'lojabauducco.com.br', 4.6, 'Sobremesas', '3.0 km', '30-40 min', 8.50);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('We Coffee', 'wecoffee.com.br', 4.9, 'Sobremesas', '4.5 km', '40-50 min', 11.00);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Carlo''s Bakery', 'carlosbakery.com', 4.5, 'Sobremesas', '5.0 km', '50-60 min', 13.00);
 
@@ -28,7 +28,7 @@ INSERT INTO restaurant (name, company_domain, rating, category, distance, delive
 -- Mercado
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Atacadão', 'atacadao.com.br', 4.4, 'Mercado', '5.0 km', '60-70 min', 20.00);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Carrefour', 'carrefour.com.br', 4.6, 'Mercado', '2.5 km', '40-50 min', 15.50);
-INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Extra', 'clubeextra.com.br', 4.5, 'Mercado', '1.8 km', '35-45 min', 12.00);
+INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Extra', 'extra.com.br', 4.5, 'Mercado', '1.8 km', '35-45 min', 12.00);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Sam''s Club', 'samsclub.com.br', 4.8, 'Mercado', '6.0 km', '60-70 min', 25.00);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Pão de Açúcar', 'paodeacucar.com', 4.7, 'Mercado', '1.0 km', '30-40 min', 14.00);
 INSERT INTO restaurant (name, company_domain, rating, category, distance, delivery_time, delivery_fee) VALUES ('Oxxo', 'oxxo.com.br', 4.3, 'Mercado', '400 m', '10-20 min', 5.00);
