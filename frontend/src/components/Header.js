@@ -8,7 +8,6 @@ const Header = () => {
 
     useEffect(() => {
         const address = localStorage.getItem('user_address');
-        
         if (address) {
             setUserAddress(address);
         }
@@ -20,19 +19,25 @@ const Header = () => {
     };
     
     return (
-        <header className="header">
-            <Link to="/">
-                <img src="/images/logo.png" alt="MyFood Logo" className="header-logo" />
-            </Link>
-            
-            {userAddress ? (
-                <div className='header-user-info'>
-                    <span>{userAddress}</span>
-                    <button onClick={handleLogout} className="logout-button">Sair</button>
+        <header className="header-wrapper">
+            <div className="header-content app-container">
+                <div className="header-logo-container">
+                    <Link to="/restaurantes" className="header-logo-link">
+                        <h1 className="header-logo-text">
+                            APItite
+                        </h1>
+                    </Link>
                 </div>
-            ) : (
-                <Link to="/login" className="login-link">Entrar</Link>
-            )}
+                
+                {userAddress ? (
+                    <div className='header-user-info'>
+                        <span>{userAddress}</span>
+                        <button onClick={handleLogout} className="logout-button">Sair</button>
+                    </div>
+                ) : (
+                    <Link to="/login" className="login-link">Entrar</Link>
+                )}
+            </div>
         </header>
     );
 };

@@ -1,16 +1,15 @@
-package com.project.myfood.backend.service;
+package com.project.backend.service;
 
-import com.project.myfood.backend.model.Restaurant;
-import com.project.myfood.backend.repository.RestaurantRepository;
+import com.project.backend.model.Restaurant;
+import com.project.backend.repository.JdbcRestaurantRepository;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
 public class RestaurantService {
+    private final JdbcRestaurantRepository restaurantRepository;
 
-    private final RestaurantRepository restaurantRepository;
-
-    public RestaurantService(RestaurantRepository restaurantRepository) {
+    public RestaurantService(JdbcRestaurantRepository restaurantRepository) {
         this.restaurantRepository = restaurantRepository;
     }
 

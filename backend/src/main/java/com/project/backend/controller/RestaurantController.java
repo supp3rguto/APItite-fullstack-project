@@ -1,7 +1,7 @@
-package com.project.myfood.backend.controller;
+package com.project.backend.controller;
 
-import com.project.myfood.backend.model.Restaurant;
-import com.project.myfood.backend.service.RestaurantService;
+import com.project.backend.model.Restaurant;
+import com.project.backend.service.RestaurantService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

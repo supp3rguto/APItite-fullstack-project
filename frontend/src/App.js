@@ -17,15 +17,15 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
 
         <Route 
-          path="/restaurantes" 
           element={
             <ProtectedRoute>
-              <AuthLayout>
-                <DashboardPage />
-              </AuthLayout>
+              <AuthLayout />
             </ProtectedRoute>
-          } 
-        />
+          }
+        >
+          <Route path="/restaurantes" element={<DashboardPage />} />
+        </Route>
+        
       </Routes>
     </Router>
   );

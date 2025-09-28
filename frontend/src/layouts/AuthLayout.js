@@ -1,18 +1,15 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import '../components/styles.css';
 
-const AuthLayout = ({ children }) => {
+const AuthLayout = () => {
   return (
-    <div className="site-wrapper">
-      <div className="app-container">
-        <Header />
-      </div>
-      
-      <main className="site-content">
-        <div className="app-container">
-          {children}
-        </div>
+    <div className="page-wrapper">
+      <Header />
+      <main className="site-content app-container">
+        <Outlet />
       </main>
 
       <Footer />

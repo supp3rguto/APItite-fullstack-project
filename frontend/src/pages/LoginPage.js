@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// AQUI ESTÁ A CORREÇÃO: Adicionamos 'Link' à importação
 import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import '../components/styles.css';

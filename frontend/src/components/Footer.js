@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="footer-content">
                 <p>
                     Este projeto é uma simulação desenvolvida para fins de estudo e portfólio, 
-                    com base na interface e funcionalidades da plataforma iFood.
+                    com base na interface e funcionalidades de plataformas como o iFood.
                 </p>
                 <p className="footer-credits">
                     Desenvolvido por Augusto Ortigoso Barbosa | supp3rguto 2025 | 

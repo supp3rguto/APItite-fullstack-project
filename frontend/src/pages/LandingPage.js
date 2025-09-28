@@ -1,41 +1,58 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer'; // Importa o Footer
+import Footer from '../components/Footer';
 import '../components/styles.css';
 
 const LandingPage = () => {
     return (
         <div className="page-wrapper">
-            <div className="landing-v3-wrapper">
-                <header className="wave-header">
-                    <div className="wave-animation-container">
-                        <div className="wave"></div>
-                        <div className="wave"></div>
-                        <div className="wave"></div>
-                    </div>
-                </header>
-
-                <div className="logo-section">
-                    <img src="/images/logo.png" alt="MyFood Logo" />
+            <header className="wave-header">
+                <h1 className="logo-text">
+                    APItite
+                </h1>
+                <div className="wave-animation-container">
+                    <div className="wave"></div>
+                    <div className="wave"></div>
+                    <div className="wave"></div>
+                    <div className="wave"></div>
+                    <div className="wave"></div>
                 </div>
+            </header>
 
-                <main className="landing-main-content-v3">
-                    <div className="landing-content">
-                        <div className="landing-text">
-                            <h1>Peça seu delivery no MyFood agora mesmo</h1>
-                            <p>A maior e mais completa plataforma de delivery do Brasil.</p>
-                            <div className="landing-actions">
-                                <Link to="/login" className="landing-button primary">Entrar</Link>
-                                <Link to="/register" className="landing-button secondary">Criar conta</Link>
+            <main className="main-content">
+                <section className="content-section">
+                    <div className="content-grid">
+                        <div className="text-content">
+                            <h2>Sua fome faz o request, a gente manda o response.</h2>
+                            <p>Não somos apenas mais um sistema de delivery; somos a prova de que a dedicação de um desenvolvedor pode transformar a complexa tarefa de escolher o que comer em uma experiência simples, lógica e deliciosa.</p>
+                            <div className="actions">
+                                <Link to="/login" className="btn primary">Entrar</Link>
+                                <Link to="/register" className="btn secondary">Criar conta</Link>
                             </div>
                         </div>
-                        <div className="landing-image">
-                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Prato de comida saudável" />
+                        <div className="image-content">
+                            <img src="../images/pic.jpg" alt="Imagem com vários pratos de comida" />
                         </div>
                     </div>
-                </main>
-            </div>
-            <Footer />
+                </section>
+
+                <section className="content-section">
+                    <div className="content-grid reverse-on-desktop">
+                        <div className="gear-container">
+                            <img 
+                                src="/images/icon.png" 
+                                alt="Engrenagem representando a lógica do sistema" 
+                                className="gear-icon" 
+                            />
+                        </div>
+                        <div className="text-content">
+                            <p>Com a precisão de um algoritmo e a paixão de um chef, o APItite garante que sua escolha seja mais do que um palpite: é a certeza de que o prato certo chegará no tempo certo.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <Footer /> 
         </div>
     );
 };

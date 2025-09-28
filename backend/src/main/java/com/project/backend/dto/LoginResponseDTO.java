@@ -1,4 +1,4 @@
-package com.project.myfood.backend.dto;
+package com.project.backend.dto;
 
 public class LoginResponseDTO {
 
