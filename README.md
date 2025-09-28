@@ -85,7 +85,7 @@ O fluxo de interação do usuário foi desenhado para ser intuitivo e reativo, i
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/seu-usuario/apittite-fullstack-project.git](https://github.com/seu-usuario/apittite-fullstack-project.git)
+git clone [https://github.com/supp3rguto/apittite-fullstack-project.git](https://github.com/supp3rguto/apittite-fullstack-project.git)
 
 # Navegue para a pasta do backend
 cd apittite-fullstack-project/backend
