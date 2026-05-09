@@ -79,10 +79,10 @@ Uma decisão técnica central neste projeto foi a **não utilização de um ORM 
 ### **1. Rodando o Backend**
 ```bash
 # Clone o repositório
-git clone [https://github.com/supp3rguto/apittite-fullstack-project.git](https://github.com/supp3rguto/apittite-fullstack-project.git)
+git clone [https://github.com/supp3rguto/APItite-delivery-app-poc.git](https://github.com/supp3rguto/APItite-delivery-app-poc.git)
 
 # Navegue para a pasta do backend
-cd apittite-fullstack-project/backend
+cd APItite-delivery-app-poc/backend
 
 # Execute o Spring Boot
 ./mvnw spring-boot:run
@@ -95,7 +95,7 @@ cd apittite-fullstack-project/backend
 
 ```bash
 # Em outro terminal, navegue para a pasta do frontend
-cd apittite-fullstack-project/frontend
+cd APItite-delivery-app-poc/frontend
 
 # Instale as dependências
 npm install
